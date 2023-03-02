@@ -16,3 +16,19 @@ minimal Linux: Debian, Ubuntu.
 ```shell
 docker run -p 8080:8080 <image-id>
 ```
+
+#### Docker Compose
+
+1. Separate CLI that gets installed along with Docker
+2. Used to start up multiple docker containers at the same time
+3. Automates some of the long-winded arguments we were passing to `docker run`
+4. In `docker-compose.yml` services tag means docker container
+
+`docker run myimage` == `docker-compose up`
+
+```shell
+docker build .
+docker run myimage 
+=== (equal sign)
+docker-compose up --build
+```
